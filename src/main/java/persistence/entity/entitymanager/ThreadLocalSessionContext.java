@@ -1,8 +1,6 @@
 package persistence.entity.entitymanager;
 
 import java.io.Closeable;
-import java.util.Map;
-import jdbc.JdbcTemplate;
 
 public class ThreadLocalSessionContext implements SessionContext, Closeable {
     private static final ThreadLocal<EntityManager> SESSION = new ThreadLocal<>();

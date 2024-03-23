@@ -7,6 +7,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class RelationTable {
 
+    private RelationTable() {
+    }
+
     private static final Map<Table, Set<Map.Entry<Table, Column>>> relationTableMap = new ConcurrentHashMap<>();
 
     public static void setRelationTable(Table table, Columns columns) {

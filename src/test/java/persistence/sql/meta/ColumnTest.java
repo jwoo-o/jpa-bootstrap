@@ -173,7 +173,7 @@ class ColumnTest {
             Entity entity = new Entity();
             column.setFieldValue(entity, 1);
 
-            assertEquals(String.valueOf(entity.id), "1");
+            assertEquals("1", String.valueOf(entity.id));
         }
     }
 }

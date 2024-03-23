@@ -3,8 +3,6 @@ package persistence.entity.event.listener;
 import persistence.entity.event.EntityEvent;
 import persistence.entity.event.action.ActionQueue;
 import persistence.entity.event.action.DeleteEntityAction;
-import persistence.entity.event.action.InsertEntityAction;
-import persistence.entity.persister.EntityPersister;
 import persistence.sql.meta.MetaModel;
 
 public class EntityDeleteListener extends AbstractEntityListener implements EntityListener {

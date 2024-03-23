@@ -219,7 +219,7 @@ class SimpleEntityManagerTest {
 
             //then
             person = entityManager.find(Person.class, 1L);
-            assertEquals(person.getName(), "user2");
+            assertEquals("user2", person.getName());
         }
 
         @DisplayName("Person entity를 flush를 호출하지 않으면 수정하지 않는다.")
